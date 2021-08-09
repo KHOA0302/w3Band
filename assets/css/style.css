@@ -1,0 +1,366 @@
+/*reset css*/
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nguyên tắc làm việc
+1.Từ trong ra ngoài
+2. Từ trên xuống dưới
+3.Tổng quan chi tiết
+*/
+
+/* 
+1.vị trí 
+2.Kích thước(widht, height)
+3.Kiểu dáng(Kiểu chữ, hình tròn, vuông,...)
+4.Màu sắc
+*/
+.float{
+    float: right !important;
+}
+.row{
+    margin-left: -8.5px;
+    margin-right:-8.5px;
+} 
+.padding{
+    display: inline-block !important;
+} 
+.mt-8{
+    margin-top: 8px !important;
+    display: block !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.row::after{
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+.contact-content{
+margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+} 
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+} 
+.col-third{
+    float: left;
+    width: 33.3333333333%;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.contact-form .button{
+    background-color: black;
+    color: blanchedalmond;
+    padding: 10px 16px;
+    float: right;
+    outline: none;
+   
+}
+.text-center{
+    text-align: center !important;
+}
+.clear 
+{
+    clear: both;
+}
+.text-white{
+    color: white !important;
+}
+#main{
+
+}
+
+#header{
+    z-index: 10;
+    height: 45.7px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+    
+}
+#nav li {
+    position: relative;
+  
+}
+#nav >li>a{
+    text-transform: uppercase;
+    color: #fff;
+}
+#nav {
+    display: inline-block;
+}
+#nav li a{
+    
+    text-decoration: none ;
+    padding: 0 24px;
+    line-height: 46px;
+    display: inline-block;
+}
+ 
+#nav > li:hover > a{
+     color: #000;
+     background-color: #ccc;
+}
+#nav li:hover .subnav   {
+    display: block;
+}   
+
+#nav .subnav {
+    box-shadow: 0 0 20px rgba(0,0, 0, 0.5);
+        position: absolute;
+        background-color: #fff;
+        display: none;
+
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+}
+#nav .nav-arrow-down{
+    font-size: 12px;
+    
+}
+#header .search-btn{
+    line-height: 46px;
+    float: right;
+    padding: 0 22px;
+}
+#header .search-btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+#header .search-icon{
+    color: #ffF;
+    font-size: 20px;
+}
+#header .mobile-menu-btn{
+    display: none;
+}
+#nav .subnav li:hover{
+    color: #000;
+     background-color: #ccc;
+
+}
+#slider{
+    position: relative;
+    background-color:rgba(0,0, 0, 0.5);
+    margin-top: 45.7px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 0;
+    padding: 32px;
+    margin: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align-last: center;
+    color: seashell;
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .take-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+#content{
+  
+
+}
+#content .content-section{
+     width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 64px 0;
+
+     margin-bottom: 48px;
+}
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.4;   
+}
+#content .about-text{
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+#content .members-list{
+     margin-top: 48px;
+}
+
+#content .member-name{
+    font-size: 15px;
+    text-align: center;
+}
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+.tour-section{
+    background-color: #000;
+}
+
+.ticket-list{
+    margin-top: 40px;
+    background-color: white;
+}
+.ticket-list .sold-out{
+    background-color: red;
+    padding: 3px   4px;
+    color: #fff;
+    margin-left: 16px;
+
+}
+.ticket-list .quantity{
+    float: right;
+    border-radius: 50%;
+    color: #fff;
+    text-align:center;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    background-color: #000;
+
+}
+.ticket-list li{
+list-style-type: none;
+color: #757575;
+font-size: 15px;
+padding: 11px 16px;
+border-bottom: 1px solid #DDD;
+}
+.place-list{
+    margin-bottom: 48px;
+    margin-top: 32px;  
+}
+
+.place-img{
+    display: block;
+    width: 100%;
+
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    font-size: 15px;
+    padding: 16px;
+    background-color: #ffF;
+    height: 195px;
+}
+.place-heading{
+     font-size: 15px;
+     font-weight: 600;
+}
+.place-time{
+    color: #757575;
+     margin-top: 15px;
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.place-buy-btn{
+    margin-bottom: 48px;
+    background-color: black;
+    color: #ffF;
+    text-decoration: none ;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    
+}
+.place-buy-btn:hover{
+    color: black;
+    background-color: #ccc;
+}
+.img-fix{
+    width: 100% !important;
+    width: 1688px;
+}
+#footer .social-list {
+    font-size: 24px;
+}
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+#footer .social-list a:hover{
+    color:rgba(0, 0, 0, 0.4);
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    color: rgba(0,0, 0, 0.8);
+}
+#footer .copy-right{
+    margin-top: 15px;
+        color: rgba(0, 0, 0, 0.8);
+}
+#footer .copy-right{
+    color: rgba(0, 0, 0, 0.8);
+}
+#footer .copy-right a:hover{
+    color: rgba(0,0, 0, 0.5);
+}
+#footer .copy-right a{
+    color: rgba(0,0, 0, 0.8);
+}
+
+    
+    

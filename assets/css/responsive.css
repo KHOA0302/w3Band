@@ -1,0 +1,173 @@
+@media only screen and (min-width: 740px) and (max-width: 1024px)
+{
+    #content .content-section {
+        max-width: 100%;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 64px 0;
+        margin-bottom: 48px;
+        padding-right: 16px;
+        padding-left: 16px;
+}
+.place-body {
+    height: 202px;
+}
+.social-list{
+    font-size: 50px !important;
+}
+#nav .subnav a {
+    padding: 7px 30px !important;
+}
+.contact-info {
+    font-size: 26px;
+    line-height: 1.4;
+}
+}
+@media only screen and (max-width: 739px){
+    #nav > li {
+        display: block;
+    }
+    #header{
+        overflow: hidden;
+        z-index: 10;
+        height: 45.7px;
+        background-color: black;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+    }
+    #content .content-section {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 0;
+        margin-bottom: 48px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-top: 70px;   
+    }
+    #header .mobile-menu-btn{
+        display: block;
+        position: absolute;
+        top:0 ;
+        right: 0;
+        float: right;
+        padding: 0 21px;
+    }
+    #header .menu-icon{
+        color: white;
+        font-size: 20px;
+        line-height: 46px;
+    }
+    #header .mobile-menu-btn:hover{
+        background-color: rgba(248, 236, 236, 0.788) ;
+        cursor: pointer;
+    
+    }
+    #header .mobile-menu-btn:hover .menu-icon
+{ 
+        color: black;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #nav {
+        display: block;
+    }
+    #nav > li:hover > a{
+        color: #000;
+        background-color: #ccc;
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    .place-heading{
+        font-size: 20px;
+    }
+    #nav .subnav {
+        position: initial;
+        background-color: #464444;
+    }
+    #nav .subnav a{
+        color: #ede2e2;
+        padding: 1px 40px;
+    }
+    #nav .subnav li:hover a{
+        color: #000;
+        background-color: #ccc;
+    }
+    #content .member-item {
+        float: initial;
+        width: 100%;
+    }
+    #content .member-name {
+        padding-top: 32px;
+    }
+    #content .members-list {
+        margin-top: 32px;
+    }
+    #content .onphone-img{
+        margin-bottom: 16px;
+        float: initial;
+        width: 100%;
+    }
+    .place-body {
+        height: 208px;
+    }
+    #content .size-img-member{
+        width: 230px;
+        height: 230px;
+    }
+    .phone-setting-contact{
+        float: initial;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    .col {
+        float: initial;
+    }
+    .col-half{
+        width: initial;
+    }
+    .place-buy-btn{
+        text-align: center;
+        width: 100%;
+    }
+    .s-mt-16{
+        margin-top: 16px;
+    }
+    #slider .text-content{
+        display: none;
+    }
+    .social-list{
+        font-size: 30px !important;
+    }
+    .contact-info {
+        font-size: 26px;
+        line-height: 1.5;
+    }
+    .tour-section {
+        padding-top: 1px;
+    }
+}
+@media only screen and (max-width: 1024px){
+.place-buy-btn{
+        padding: 15px 16px !important;
+}
+
+#footer .social-list > a{
+    margin: 0 8px;
+}
+.contact-form .form-control{
+    padding: 15px !important;
+}
+#footer .copy-right a {
+    padding: 20px 0;
+    display: inline-block;
+}
+}
+    
