@@ -186,10 +186,8 @@ margin-top: 48px;
     background-color:rgba(0,0, 0, 0.5);
     margin-top: 26.7px;
     padding-top: 50%;
-    background-image: url('/assets/img/slider/slider1.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: url(/assets/img/band/slider1.jpg) top center / cover no-repeat; 
+
 }
 #slider .text-content{
     position: absolute;
